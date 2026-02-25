@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Store – Professional Websites in 4 Business Days</title>
+    <meta name="description"
+        content="Get a professional resume website, portfolio, or business landing page within 4 Business Days. Starting at ₹149. Fully customized for you." />
+    <meta name="keywords"
+        content="resume website, portfolio website, business landing page, professional website India, cheap website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BANNER -->
+    <div class="announcement-bar" id="announcementBar">
+        <div class="announcement-track">
+            <span class="announcement-text">🚧 This site is currently in <strong>Beta</strong> — We're still building
+                and improving! Stay tuned for updates. &nbsp;✨&nbsp; 🚧 This site is currently in <strong>Beta</strong>
+                — We're still building and improving! Stay tuned for updates. &nbsp;✨&nbsp; 🚧 This site is currently in
+                <strong>Beta</strong> — We're still building and improving! Stay tuned for updates. &nbsp;✨&nbsp; 🚧
+                This site is currently in <strong>Beta</strong> — We're still building and improving! Stay tuned for
+                updates. &nbsp;✨&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- ============================================
+     NAVBAR
+     ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a class="nav-logo" href="#" onclick="showPage('home'); return false;">
+                M<span class="logo-dot">.Store</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a class="nav-link active" data-page="home" href="#"
+                        onclick="showPage('home'); return false;">Home</a></li>
+                <li><a class="nav-link" data-page="store" href="#" onclick="showPage('store'); return false;">Store</a>
+                </li>
+                <li><a class="nav-link" data-page="tnc" href="#" onclick="showPage('tnc'); return false;">T&amp;C</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle Theme"
+                    aria-label="Toggle dark/light mode">🌙</button>
+                <a href="mailto:manishroy.contact@gmail.com" class="btn btn-primary"
+                    style="padding:10px 22px;font-size:14px;">� Contact Now</a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="mobile-nav-link" href="#" onclick="showPage('home'); return false;" data-page="home">🏠 Home</a>
+        <a class="mobile-nav-link" href="#" onclick="showPage('store'); return false;" data-page="store">🛒 Store</a>
+        <a class="mobile-nav-link" href="#" onclick="showPage('tnc'); return false;" data-page="tnc">📋 Terms &amp;
+            Conditions</a>
+        <a href="mailto:manishroy.contact@gmail.com" class="btn btn-primary"
+            style="margin-top:8px; width:100%; justify-content:center;">� Contact via Email</a>
+    </div>
+
+    <!-- ============================================
+     HOME PAGE
+     ============================================ -->
+    <div class="page active" id="page-home">
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <canvas id="heroCanvas"
+                style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="dot"></span>
+                        🚀 Premium Freelance Web Services
+                    </div>
+                    <h1>Launch Your <span class="accent">Professional</span> Website in <span class="accent">24
+                            Hours</span></h1>
+                    <p class="hero-sub">Resume. Portfolio. Business Landing Pages.</p>
+                    <div class="hero-price">
+                        🏷️ Starting at ₹149 · Fully Custom · Mobile Ready
+                    </div>
+                    <div class="hero-trust-line">
+                        <span class="trust-text">✅ Pay After Your Site is Live</span>
+                        <span class="trust-subtext"><a href="#" onclick="showPage('tnc'); return false;"
+                                style="color:rgba(255,255,255,0.5);">*T&C Apply</a></span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#" onclick="showPage('store'); return false;" class="btn btn-primary"
+                            style="font-size:16px;padding:16px 32px;">🛒 View Templates</a>
+                        <a href="mailto:manishroy.contact@gmail.com?subject=I%20want%20a%20professional%20website"
+                            class="btn btn-ghost" style="font-size:16px;padding:16px 32px;">� Contact
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-visual-card">
+                        <div class="mini-badge"><span class="icon">✨</span> Trusted by professionals</div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="200" data-suffix="+">0+</div>
+                                <div class="stat-label">Websites Delivered</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="24" data-suffix="h">0h</div>
+                                <div class="stat-label">Avg. Delivery Time</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="98" data-suffix="%">0%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">₹149</div>
+                                <div class="stat-label">Starting Price</div>
+                            </div>
+                        </div>
+                        <div class="float-notif">
+                            <div class="float-notif-icon">✅</div>
+                            <div class="float-notif-text">
+                                <strong>Order Delivered!</strong>
+                                <span>Resume website ready in 6 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE CARDS -->
+        <section class="section features">
+            <div class="container">
+                <div style="text-align:center; margin-bottom:0;">
+                    <span class="badge">Why Choose Us</span>
+                    <h2 class="section-title" style="text-align:center;">Everything You Need. <span
+                            style="color:var(--accent);">Nothing You Don't.</span></h2>
+                    <p class="section-subtitle" style="margin:12px auto 0; text-align:center;">We obsess over quality so
+                        you get a website that creates first impressions that last.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">✏️</div>
+                        <h3>Custom Edited for You</h3>
+                        <p>Not a template dump. Every website is personally edited with your name, details, and brand —
+                            tailored to your needs.</p>
+                    </div>
+                    <div class="feature-card reveal reveal-delay-1">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Responsive</h3>
+                        <p>Your website looks stunning on any screen — phone, tablet, or desktop. Pixel-perfect
+                            responsiveness guaranteed.</p>
+                    </div>
+                    <div class="feature-card reveal reveal-delay-2">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Delivery Within 4 Business Days</h3>
+                        <p>Share your details today, receive your professional website by tomorrow. Fast, reliable, and
+                            ready to impress.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING HIGHLIGHT -->
+        <section class="section pricing-highlight">
+            <div class="container">
+                <div class="pricing-header reveal">
+                    <span class="badge">Simple Pricing</span>
+                    <h2 class="section-title">Transparent Pricing. <span style="color:var(--accent);">No Hidden
+                            Fees.</span></h2>
+                    <p class="section-subtitle" style="margin:12px auto 0;">Choose the package that fits your need. All
+                        include custom edits + responsive design.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card reveal">
+                        <div class="price-info">
+                            <div class="price-name">Resume Website</div>
+                            <div class="price-desc">Full resume with sections</div>
+                        </div>
+                        <div class="price-tag">₹399</div>
+                    </div>
+                    <div class="price-card featured reveal reveal-delay-1">
+                        <div class="price-info">
+                            <div class="price-name">Portfolio Website</div>
+                            <div class="price-desc">Showcase your creative work</div>
+                        </div>
+                        <div class="price-tag">₹499</div>
+                    </div>
+                    <div class="price-card reveal reveal-delay-2">
+                        <div class="price-info">
+                            <div class="price-name">Business Landing Page</div>
+                            <div class="price-desc">Convert visitors to clients</div>
+                        </div>
+                        <div class="price-tag">₹599+</div>
+                    </div>
+                    <div class="price-card reveal reveal-delay-3">
+                        <div class="price-info">
+                            <div class="price-name">6 Month Subdomain</div>
+                            <div class="price-desc">yourname.subdm.site</div>
+                        </div>
+                        <div class="price-tag">₹349</div>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top:40px;" class="reveal">
+                    <a href="#" onclick="showPage('store'); return false;" class="btn btn-primary"
+                        style="padding:16px 36px;font-size:16px;">Browse All Templates →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOM SECTION -->
+        <section class="custom-section">
+            <div class="container">
+                <h2>Need a Custom Website?</h2>
+                <p>Custom Resume &amp; Business Websites Starting at ₹499</p>
+                <a href="mailto:manishroy.contact@gmail.com?subject=Custom%20Website%20Request" class="btn-white">
+                    � Discuss Your Requirement <span style="font-size:18px;">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF -->
+        <section class="section features" style="background:var(--bg-secondary);">
+            <div class="container">
+                <div style="text-align:center;">
+                    <span class="badge">Testimonials</span>
+                    <h2 class="section-title" style="text-align:center;">What Our <span
+                            style="color:var(--accent);">Clients Say</span></h2>
+                </div>
+                <div class="features-grid" style="margin-top:40px;">
+                    <div class="feature-card reveal">
+                        <div style="font-size:24px;margin-bottom:14px;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style:italic;">"Got my MBA resume website in just 8 hours! Looks incredibly
+                            professional. My recruiter complimented it."</p>
+                        <p style="margin-top:16px;font-weight:700;color:var(--text-primary);">— Aarav S., MBA Graduate
+                        </p>
+                    </div>
+                    <div class="feature-card reveal reveal-delay-1">
+                        <div style="font-size:24px;margin-bottom:14px;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style:italic;">"My portfolio site is stunning. I've already gotten 3 client
+                            inquiries from it. Worth every rupee!"</p>
+                        <p style="margin-top:16px;font-weight:700;color:var(--text-primary);">— Priya M., UI Designer
+                        </p>
+                    </div>
+                    <div class="feature-card reveal reveal-delay-2">
+                        <div style="font-size:24px;margin-bottom:14px;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style:italic;">"Our salon landing page went live overnight. Bookings have doubled
+                            since we started sharing the link."</p>
+                        <p style="margin-top:16px;font-weight:700;color:var(--text-primary);">— Deepika R., Salon Owner
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-logo">M<span style="color:var(--accent);">.Store</span></div>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#" onclick="showPage('home'); return false;">Home</a></li>
+                        <li><a class="footer-link" href="#" onclick="showPage('store'); return false;">Store</a></li>
+                        <li><a class="footer-link" href="#" onclick="showPage('tnc'); return false;">Terms &amp;
+                                Conditions</a></li>
+                        <li><a class="footer-link" href="mailto:manishroy.contact@gmail.com">Email Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copy">
+                    © 2024 M. Store · Freelance Digital Services · India<br>
+                    <span style="font-size:12px;">All services are subject to our <a href="#"
+                            onclick="showPage('tnc'); return false;" style="color:var(--accent);">Terms &amp;
+                            Conditions</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============================================
+     STORE PAGE
+     ============================================ -->
+    <div class="page" id="page-store">
+
+        <!-- Store Header -->
+        <div class="store-header">
+            <div class="container">
+                <span class="badge" style="margin-bottom:16px;">45+ Templates Available</span>
+                <h1 class="section-title" style="text-align:center;">Choose Your <span
+                        style="color:var(--accent);">Perfect Template</span></h1>
+                <p class="section-subtitle" style="text-align:center;margin:14px auto 0;">Explore our curated
+                    collection. Every template is custom-edited with your details before delivery.</p>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-wrap" style="position:sticky;top:62px;z-index:100;">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Templates</button>
+                <button class="filter-btn" data-filter="resume">📄 Resume</button>
+                <button class="filter-btn" data-filter="portfolio">🎨 Portfolio</button>
+                <button class="filter-btn" data-filter="business">🚀 Business</button>
+            </div>
+        </div>
+
+        <!-- Templates Grid -->
+        <section class="section-sm templates-section-bg">
+            <div class="container">
+                <div class="templates-grid" id="templatesGrid">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom CTA in Store -->
+        <section class="custom-section">
+            <div class="container">
+                <h2>Need a Custom Website?</h2>
+                <p>Custom Resume &amp; Business Websites Starting at ₹499</p>
+                <a href="mailto:manishroy.contact@gmail.com?subject=Custom%20Website%20Request" class="btn-white">
+                    � Discuss Your Requirement <span style="font-size:18px;">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Store Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-logo">M<span style="color:var(--accent);">.Store</span></div>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#" onclick="showPage('home'); return false;">Home</a></li>
+                        <li><a class="footer-link" href="#" onclick="showPage('store'); return false;">Store</a></li>
+                        <li><a class="footer-link" href="#" onclick="showPage('tnc'); return false;">Terms &amp;
+                                Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copy">© 2024 M. Store · Freelance Digital Services · India</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============================================
+     TERMS & CONDITIONS PAGE
+     ============================================ -->
+    <div class="page" id="page-tnc">
+        <div class="tnc-page">
+            <div class="tnc-header">
+                <div class="container">
+                    <span class="badge">Last updated: February 2024</span>
+                    <h1 class="section-title" style="text-align:center;margin-top:16px;">Terms &amp; Conditions</h1>
+                    <p class="section-subtitle" style="text-align:center;margin:14px auto 0;">Please read these terms
+                        carefully before placing an order. By engaging our services, you agree to all terms stated
+                        below.</p>
+                </div>
+            </div>
+
+            <div class="tnc-content">
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">1</span> Nature of Service</h2>
+                    <p>M. Store is an independent freelance digital service provider operating in India. Services
+                        are provided by an individual freelancer and are <strong>not associated with any company, firm,
+                            or corporation</strong>.</p>
+                    <ul>
+                        <li>All services are offered on a freelance basis under applicable Indian laws, including the
+                            Information Technology Act, 2000 and the Indian Contract Act, 1872.</li>
+                        <li>M. Store is not a registered technology company and operates as an independent
+                            service provider.</li>
+                        <li>Services are offered to clients primarily based in India and may extend to international
+                            clients at the discretion of the freelancer.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">2</span> Scope of Services</h2>
+                    <p>The following services are offered under M. Store:</p>
+                    <ul>
+                        <li>Degree / Basic Resume Websites</li>
+                        <li>Professional Resume Websites</li>
+                        <li>Job Level / Executive Resume Websites</li>
+                        <li>Creative & Professional Portfolio Websites</li>
+                        <li>Business Landing Pages</li>
+                        <li>Subdomain Services</li>
+                        <li>Hosting Services (By 3rd Party)</li>
+                    </ul>
+                    <p style="margin-top:12px;">All services are <strong>delivered digitally</strong> via WhatsApp,
+                        email, or other agreed digital channels. No physical delivery of any product is made.</p>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">3</span> Payment Policy</h2>
+                    <ul>
+                        <li><strong>Full or partial advance payment</strong> may be required before work begins, as
+                            agreed upon between the client and service provider.</li>
+                        <li>Payment can be made via UPI, bank transfer, or other modes as mutually agreed.</li>
+                        <li>Pricing is as listed on the store page. Custom projects are priced individually after
+                            discussion.</li>
+                        <li>All prices are in Indian Rupees (INR) and inclusive of applicable fees unless stated
+                            otherwise.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">4</span> Delivery Policy</h2>
+                    <ul>
+                        <li>Standard delivery is within <strong>4 Business Days</strong> of receiving all required
+                            details from
+                            the client.</li>
+                        <li>Delivery timelines may extend in cases of incomplete information, complex requirements, or
+                            high order volume.</li>
+                        <li>The client will be notified if delivery is expected to be delayed.</li>
+                        <li>Work is delivered digitally — as a live link, downloadable files, or shared via agreed-upon
+                            platform.</li>
+                    </ul>
+                    <div class="tnc-highlight">
+                        <p>⚠️ The client is responsible for providing accurate and complete information (name, details,
+                            content, images, etc.) required for the website. Delays caused by incomplete client inputs
+                            are not the responsibility of M. Store.</p>
+                    </div>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">5</span> Review &amp; Refund Policy</h2>
+                    <p>We are committed to delivering high-quality work. Please review the following carefully:</p>
+                    <ul>
+                        <li>Upon delivery, the client must <strong>review the delivered work within 7 calendar
+                                days</strong>.</li>
+                        <li>Any concerns, issues, or refund requests must be raised <strong>within 7 days of
+                                delivery</strong>.</li>
+                        <li><strong>After 7 days of delivery, no refund claims will be entertained under any
+                                circumstances.</strong></li>
+                        <li>Refunds, if applicable, are at the sole discretion of the service provider based on genuine
+                            service failures.</li>
+                        <li>Refunds are <strong>not</strong> applicable if the client has simply changed their mind,
+                            provided incorrect details, or delayed communication beyond the 7-day review window.</li>
+                        <li><strong>Refunds are not applicable if the website has been delivered and is
+                                running/live.</strong>
+                            Once the website is live and functional, the service is considered fully rendered.</li>
+                    </ul>
+                    <div class="tnc-highlight">
+                        <p>📌 Under Section 65B of the Indian Information Technology Act and general consumer protection
+                            guidelines, refund eligibility shall be assessed based on the quality and completeness of
+                            digital service delivery.</p>
+                    </div>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">6</span> Revision Policy</h2>
+                    <ul>
+                        <li>Each service package includes <strong>1–2 free revisions</strong>, which must be requested
+                            within the 7-day review period.</li>
+                        <li>A <strong>revision</strong> refers to minor changes: text updates, color changes, section
+                            rearrangements, or small additions.</li>
+                        <li>A revision does <strong>not</strong> include a complete redesign, change of template, or
+                            adding major new sections — such requests will be treated as a new order.</li>
+                        <li>Revisions requested after the 7-day window may be subject to additional charges.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">7</span> Hosting &amp; Domain Policy</h2>
+                    <ul>
+                        <li>M. Store may offer subdomain hosting (e.g., <em>yourname.subdm.site</em>) for a fixed
+                            6-month period as a paid add-on service.</li>
+                        <li>Unless explicitly agreed and paid for, <strong>hosting and domain registration are not
+                                included</strong> in the standard service packages.</li>
+                        <li>The client is responsible for managing their own domain, hosting, or deployment after
+                            receiving the delivered files.</li>
+                        <li>M. Store is not liable for any downtime, data loss, or expiry related to third-party
+                            hosting or domain providers used by the client.</li>
+                        <li>Subdomain hosting offered by M. Store is renewed only upon fresh payment. Lapsed
+                            hosting will result in the subdomain going offline.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">8</span> Intellectual Property</h2>
+                    <ul>
+                        <li>Upon full payment, the client receives the right to use the delivered website for personal
+                            or business purposes.</li>
+                        <li>The client <strong>may not resell, redistribute, or claim original authorship</strong> of
+                            the delivered work's underlying design framework.</li>
+                        <li>M. Store retains the right to display the delivered work in its portfolio unless the
+                            client explicitly requests otherwise in writing prior to project commencement.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">9</span> Client Responsibilities</h2>
+                    <ul>
+                        <li>The client agrees to provide <strong>accurate, lawful, and non-infringing content</strong>
+                            for use on their website.</li>
+                        <li>M. Store is not liable for any legal issues arising from content provided by the
+                            client — including but not limited to copyright infringement, defamation, or illegal
+                            content.</li>
+                        <li>The client is solely responsible for the information published on their website.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">10</span> Limitation of Liability</h2>
+                    <ul>
+                        <li>M. Store is not liable for indirect, incidental, or consequential damages arising
+                            from the use or inability to use the delivered website.</li>
+                        <li>Our total liability in any dispute shall not exceed the amount paid by the client for the
+                            specific service in question.</li>
+                        <li>These terms are governed by and construed in accordance with the laws of India. Any disputes
+                            shall be subject to the jurisdiction of courts in <strong>[Your City], India</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">11</span> Privacy &amp; Data</h2>
+                    <ul>
+                        <li>Client information shared for the purpose of website creation (name, photo, contact, etc.)
+                            will only be used to deliver the requested service.</li>
+                        <li>Client data will not be shared with third parties without consent.</li>
+                        <li>By engaging our services, you consent to the collection and use of your information as
+                            described above, in compliance with India's Information Technology (Reasonable Security
+                            Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.</li>
+                    </ul>
+                </div>
+
+                <div class="tnc-section">
+                    <h2><span class="tnc-num">12</span> Modifications to Terms</h2>
+                    <p>M. Store reserves the right to update or modify these Terms &amp; Conditions at any time
+                        without prior notice. Continued use of our services after changes constitutes acceptance of the
+                        updated terms. Always review the latest version before placing an order.</p>
+                </div>
+
+                <div class="tnc-section" style="border-bottom:none;">
+                    <h2><span class="tnc-num">📬</span> Contact Details</h2>
+                    <p>For any queries, revision requests, refund claims, or pre-sales inquiries, please contact us
+                        through:</p>
+                    <div class="contact-box">
+                        <p>📧 Email: <a href="mailto:manishroy.contact@gmail.com">manishroy.contact@gmail.com</a></p>
+                        <p style="margin-top:8px;">🌐 Website: <a href="#">M. Store</a></p>
+                        <p style="margin-top:8px;font-weight:400;color:var(--text-secondary);font-size:14px;">Response
+                            time: Within 4 Business Days on business days.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="footer-logo">M<span style="color:var(--accent);">.Store</span></div>
+                        <ul class="footer-links">
+                            <li><a class="footer-link" href="#" onclick="showPage('home'); return false;">Home</a></li>
+                            <li><a class="footer-link" href="#" onclick="showPage('store'); return false;">Store</a>
+                            </li>
+                            <li><a class="footer-link" href="#" onclick="showPage('tnc'); return false;">Terms &amp;
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copy">© 2024 M. Store · Freelance Digital Services · India<br>
+                        <span style="font-size:12px;">All services governed under Indian Law</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Email Float Button -->
+    <a href="mailto:manishroy.contact@gmail.com?subject=Interested%20in%20Website%20Services" class="wa-float"
+        title="Email Us" aria-label="Email Us">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+    </a>
+
+    <!-- ============================================
+     TEMPLATE PREVIEW MODAL
+     ============================================ -->
+    <div id="previewModal" class="preview-overlay" onclick="closePreview(event)">
+        <div class="preview-modal">
+            <button class="preview-close" onclick="closePreview()">✕</button>
+
+            <!-- Carousel -->
+            <div class="preview-carousel">
+                <div class="preview-slides" id="previewSlides"></div>
+                <button class="prev-btn" onclick="slidePreview(-1)">&#8249;</button>
+                <button class="next-btn" onclick="slidePreview(1)">&#8250;</button>
+                <div class="preview-dots" id="previewDots"></div>
+            </div>
+
+            <!-- Info Panel -->
+            <div class="preview-info">
+                <span class="preview-badge" id="previewBadge"></span>
+                <h2 class="preview-title" id="previewTitle"></h2>
+                <p class="preview-desc" id="previewDesc"></p>
+
+                <ul class="preview-features">
+                    <li>✅ Custom edited with your details</li>
+                    <li>✅ Mobile responsive design</li>
+                    <li>✅ Delivered within 4 Business Days</li>
+                    <li>✅ 1–2 free revisions included</li>
+                </ul>
+
+                <div class="preview-price-wrap">
+                    <div class="preview-price-label">Price</div>
+                    <div class="preview-price" id="previewPrice"></div>
+                    <div class="preview-price-note">One-time payment · No hidden fees</div>
+                </div>
+
+                <a class="btn btn-primary preview-cta" id="previewCTA">
+                    � Order via Email
+                </a>
+                <button class="preview-close-btn" onclick="closePreview()">✕ Close Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="store.js"></script>
+</body>
+
+</html>
